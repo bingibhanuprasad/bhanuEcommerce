@@ -1,0 +1,360 @@
+/* Navbar Container */
+.navSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96%;
+    max-width: 1300px;
+    z-index: 1000;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Navbar Hover Effect */
+.navSection:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.title img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+ border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.title img:hover {
+    transform: scale(1.1);
+}
+
+/* Search Bar */
+.navSection input {
+    padding: 10px 15px;
+    width: 270px;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+}
+
+.navSection input:focus {
+    width: 320px;
+    border-color: #ff3d4f;
+    box-shadow: 0 0 12px rgba(255, 61, 79, 0.4);
+}
+
+/* User & Cart Section */
+.user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+/* User Details */
+
+.user-details {
+    padding: 10px 22px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #ff3d4f, #ff6b61);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+     transition: all 0.3s ease-in-out; 
+    box-shadow: 0px 5px 12px rgba(255, 61, 79, 0.3);
+}
+.user-btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: none;
+    background: none;
+  }
+
+.user-icon {
+    margin-right: 8px;
+    color: greenyellow;
+  }
+/* 
+.user-details:hover {
+    background: linear-gradient(45deg, #ff6b61, #342729);
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 15px rgba(255, 61, 79, 0.5);
+} */
+
+/* Cart */
+.cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #ff3d4f, #ff6b61);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 12px rgba(255, 61, 79, 0.3);
+    text-decoration: none;
+}
+
+/* Remove default link styles */
+.cart a, .user-details a, .title a {
+    text-decoration: none;
+    color: inherit;
+} 
+
+/* Cart Hover Effect */
+.cart:hover {
+    background: linear-gradient(45deg, #ff6b61, #ff3d4f);
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 15px rgba(255, 61, 79, 0.5);
+}
+
+/* Cart Items Count Badge */
+.cart span {
+    background: yellow;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    min-width: 20px;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Bar */
+.subMenu {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 61, 79, 0.9);
+    padding: 12px 0;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 95px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 12px 12px;
+    
+}
+
+
+.subMenu a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    margin-right: 5px;
+    font-size: 20px;
+    color:greenyellow;
+
+}
+
+.subMenu li {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+/* Submenu Hover Effect */
+.subMenu li:hover {
+    background: #ff6b61;
+    border-radius: 8px;
+    transform: translateY(-2px);
+}
+
+/* Animated Underline Effect */
+.subMenu li::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: yellow;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.subMenu li:hover::after {
+    width: 100%;
+}
+
+
+ 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+ 
+.user-btn {
+    background: linear-gradient(45deg, #ff3d4f, #ff6b61);
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 12px rgba(255, 61, 79, 0.3);
+}
+
+.user-btn:hover {
+    background: linear-gradient(45deg, #ff6b61, #ff3d4f);
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 15px rgba(255, 61, 79, 0.5);
+}
+
+.icon {
+    font-size: 16px;
+  }
+ 
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 5px 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s;
+}
+ 
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+ 
+.dropdown-item {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 61, 79, 0.1);
+}
+
+ 
+.logout-btn {
+    width: 100%;
+    background: #ff3d4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 0 0 8px 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+ 
+
+
+.logout-btn:hover {
+    background: #cc0000;
+}
+
+/* 
+
+.subMenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .subMenu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    font-size: 25px;
+    color: #333;
+  } */
+  
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .navSection {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .navSection input {
+        width: 220px;
+    }
+
+    .subMenu {
+        flex-direction: column;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .subMenu li {
+        padding: 10px 15px;
+        width: 100%;
+    }
+}
+
+

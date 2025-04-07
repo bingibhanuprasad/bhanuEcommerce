@@ -1,0 +1,55 @@
+.computer-section {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .computer-title {
+    padding-right: 900px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #e74c3c; /* Same red shade as watches */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left; /* Left-aligned title */
+    margin-bottom: 15px; /* Space between title and images */
+  }
+  
+  .computer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px; /* Space between images */
+    max-width: 100%;
+  }
+  
+  .computer-card {
+    width: 150px;  
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .computer-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .computer-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(231, 76, 60, 0.5); /* Red glow effect */
+  }
+  
+  .computer-card:hover img {
+    transform: scale(1.1);
+  }
+  

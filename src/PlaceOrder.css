@@ -1,0 +1,79 @@
+/* PlaceOrder.css */
+.order-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .order-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .empty-order {
+    font-size: 1.2rem;
+    color: red;
+  }
+  
+  .order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .order-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .order-details {
+    flex-grow: 1;
+    padding-left: 10px;
+    text-align: left;
+  }
+  
+  .order-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .order-total {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .confirm-order-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .confirm-order-btn:hover {
+    background-color: #218838;
+  }
+  
+  .back-to-home {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+    font-size: 1.1rem;
+  }
+  
